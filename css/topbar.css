@@ -1,0 +1,32 @@
+#topBar {
+    background-color: #F3F3F3;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: sticky;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#topBar a,button {
+    border: none;
+    text-decoration: underline #a6acb8;
+    text-underline-offset: 8px;
+    background-color: #F3F3F3;
+    color: #a6acb8;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    height: min-content;
+    padding: 20px;
+
+    font-family: Arial;
+}
+
+#topBar a:hover,button:hover {
+    color: #4285f4;
+    text-decoration: underline #4285f4;
+
+}
