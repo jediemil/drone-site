@@ -2,19 +2,26 @@ body, html {
     margin: 0;
     padding: 0;
 
-    animation: lockScroll 5s linear;
+    /*animation: lockScroll 5s linear;*/
 }
 
 .fadeOverlay270deg {
     background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
 
-#mainImageContainer {
-    background-image: url("../resources/IMG_2735.JPG");
+.backgroundImage960W720H {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; /*Ser till att den stannar i mitten*/
     background-size: auto 100%; /*Gör så att hela skärmen täcks av bilden*/
+}
+
+/*
+    Main:
+*/
+
+#mainImageContainer {
+    background-image: url("../resources/IMG_2735.JPG");
 }
 
 #fadeOverlay {
@@ -40,16 +47,19 @@ body, html {
 }
 
 #mainContainer h3 {
-    color: #a6acb8;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
 #whyDroneText {
-    padding: 10px;
+    padding: 10px 50px;
     text-align: justify;
     color: #a6acb8;
     font-family: 'Montserrat', sans-serif;
+}
+
+#whyDroneIMG {
+    width: 100%;
 }
 
 @keyframes animationFadeOverlay {
@@ -74,8 +84,56 @@ body, html {
 }
 
 @media only screen and (min-aspect-ratio: 960/720) {
-    #mainImageContainer {
+    .backgroundImage960W720H {
         background-size: 100% auto; /*Gör så att bakgrundsbilden alltid täcker hela skärmen
         Byter vilken axel (x, y) som prioriteras att göras så stor som möjligt så att inga svarta kanter kommer runt bilden*/
     }
+}
+
+/*
+    Utrustning:
+*/
+#utrustningImageContainer {
+    background-image: url("../resources/IMG_2695.JPG");
+}
+
+#utrustningContainer h1 {
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    height: min-content;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#p1 {
+    font-size: 1vw;
+    padding-left: 20px;
+}
+
+#utrustningContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    margin: 0;
+    text-align: center;
+}
+
+#utrustningContainer img {
+    width: 80%;
+    margin: auto;
+}
+
+#utrustningContainer h3 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#utrustningContainer p {
+    color: #a6acb8;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: justify;
 }

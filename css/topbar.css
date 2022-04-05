@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
+    z-index: 10;
 }
 
 #topBar a,button {
@@ -28,5 +29,26 @@
 #topBar a:hover,button:hover {
     color: #4285f4;
     text-decoration: underline #4285f4;
+}
 
+.hidden {
+    display: none !important;
+}
+
+#myProjectsDropdown li {
+    opacity: 0;
+}
+
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
 }
