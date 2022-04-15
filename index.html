@@ -16,22 +16,25 @@
 <body>
 <div id="topBar">
     <a href="index.html">Hem</a>
-    <button onmouseenter="dropDownProject()" onclick="toggleDownProject()" onmouseleave="hideProject()" id="projectButton">Mina projekt</button>
-    <ul id="myProjectsDropdown" class="hidden">
-        <li>AAAA</li>
-        <li>AAAA</li>
-        <li>AAAA</li>
-    </ul>
+    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()">
+        <button onclick="toggleDownProject()"id="projectButton">Mina projekt</button>
+        <ul id="myProjectsDropdown" class="hidden">
+            <li><a class="dropdownContent">Falkenberg 2021</a></li>
+            <li><a class="dropdownContent">Norbo 2021</a></li>
+            <li><a class="dropdownContent">AAAAA</a></li>
+        </ul>
+    </div>
     <a href="utrustning.html">Min utrustning</a>
     <a>Flyg drönare själv</a>
     <script>
-        const ulContents = document.getElementById("myProjectsDropdown").children
         function dropDownProject() {
             document.getElementById("myProjectsDropdown").classList.remove("hidden")
-            for (let i = 0; i < document.getElementById("myProjectsDropdown").childElementCount; i++) {
-                ulContents.item(i).style.animation = "rotateX 600ms " + (i*60) + "ms"
-                console.log(i + " animatate " + ulContents.item(i).textContent)
-            }
+        }
+        function toggleDownProject() {
+            document.getElementById("myProjectsDropdown").classList.toggle("hidden")
+        }
+        function hideProject() {
+            document.getElementById("myProjectsDropdown").classList.add("hidden")
         }
     </script>
 </div>

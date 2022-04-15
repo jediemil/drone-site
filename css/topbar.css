@@ -11,7 +11,7 @@
     z-index: 10;
 }
 
-#topBar a,button {
+#topBar > a, #topBar button {
     border: none;
     text-decoration: underline #a6acb8;
     text-underline-offset: 8px;
@@ -26,29 +26,31 @@
     font-family: Arial;
 }
 
-#topBar a:hover,button:hover {
+#topBar div {
+    width: 100%;
+}
+
+#topBar a:hover,#topBar button:hover, #myProjectsDropdown li:hover {
     color: #4285f4;
-    text-decoration: underline #4285f4;
+    text-decoration-color: #4285f4;
 }
 
 .hidden {
     display: none !important;
 }
 
-#myProjectsDropdown li {
-    opacity: 0;
+#myProjectsDropdown {
+    background-color: #F3F3F3;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: fixed;
 }
 
-@keyframes rotateX {
-    0% {
-        opacity: 0;
-        transform: rotateX(-90deg);
-    }
-    50% {
-        transform: rotateX(-20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-    }
+#myProjectsDropdown li {
+    padding: 15px;
+    color: #a6acb8;
+    width: 100%;
+    font-family: Arial;
+    font-size: 1.5vw;
 }
