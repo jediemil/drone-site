@@ -14,6 +14,18 @@ body, html {
     background-attachment: fixed;
     background-position: center; /*Ser till att den stannar i mitten*/
     background-size: auto 100%; /*Gör så att hela skärmen täcks av bilden*/
+    z-index: 2;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    z-index: 3;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #a6acb8;
 }
 
 /*
@@ -32,30 +44,20 @@ body, html {
 #mainContainer h1 {
     color: white;
     font-size: 6vw;
-    text-align: center;
     height: min-content;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
 }
+
 #mainContainer h2 {
     color: white;
     font-size: 3vw;
-    text-align: center;
     height: min-content;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#mainContainer h3 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #whyDroneText {
     padding: 10px 50px;
     text-align: justify;
-    color: #a6acb8;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #whyDroneIMG {
@@ -100,10 +102,8 @@ body, html {
 #utrustningContainer h1 {
     color: white;
     font-size: 6vw;
-    text-align: center;
     height: min-content;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #p1 {
@@ -112,10 +112,8 @@ body, html {
 }
 
 #utrustningContainer h2 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 4vw;
     margin: 0;
-    text-align: center;
 }
 
 #utrustningContainer img {
@@ -125,15 +123,71 @@ body, html {
 
 #utrustningContainer h3 {
     font-size: 3vw;
-    text-align: center;
     margin: 20px auto;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #utrustningContainer p {
-    color: #a6acb8;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-
     text-align: justify;
+}
+
+
+/* Flyg Drönare Själv */
+
+#flyselfContainer img {
+    object-fit: cover;
+    height: 100%;
+    width: 95%;
+    margin: auto;
+}
+
+#flyselfContainer h1 {
+    color: white;
+    font-size: 6vw;
+    height: min-content;
+    margin: auto;
+}
+
+#flyselfImageContainer {
+    background-image: url("../resources/IMG_2693.JPG");
+}
+
+#firstFlightText, #oneYearText, #nowText {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#flySelfSimpleText {
+    margin: 0;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+
+
+/* Projekt */
+
+#projectTitleMain h1 {
+    color: white;
+    font-size: 6vw;
+    height: min-content;
+    margin: auto;
+    animation: goDown 1s ease-in-out;
+    padding-top: 10px;
+}
+
+#projectTitleMain {
+    overflow: hidden;
+    height: 100%;
+    z-index: 4;
+}
+
+@keyframes goDown {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
