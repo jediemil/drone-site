@@ -50,6 +50,7 @@
 #whyDroneOverlay {
     grid-column: 3/-2;
     grid-row: 8/10;
+    margin-left: 7%;
 }
 
 /*
