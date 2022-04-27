@@ -28,6 +28,10 @@ p {
     color: #a6acb8;
 }
 
+.lockScroll {
+    animation: lockScroll 4s linear;
+}
+
 /*
     Main:
 */
@@ -172,7 +176,7 @@ p {
     font-size: 6vw;
     height: min-content;
     margin: auto;
-    animation: goDown 1s ease-in-out;
+    animation: goDown 4s ease-in-out;
     padding-top: 10px;
 }
 

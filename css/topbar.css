@@ -3,12 +3,15 @@
     width: 100vw;
     top: 0;
     left: 0;
-    position: sticky;
+    position: fixed;
 
     display: flex;
     align-items: center;
     flex-grow: 1;
     z-index: 10;
+
+    transform: translateY(-100%);
+    transition: transform 0.3s;
 }
 
 #topBar > a, #topBar button {
@@ -53,4 +56,31 @@
     width: 100%;
     font-family: Arial;
     font-size: 1.5vw;
+}
+
+#myProjectsDropdown a {
+    color: #a6acb8;
+    text-decoration: none;
+}
+
+@keyframes hide {
+    0% {
+        transform: translateY(0%);
+        display: flex;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: flex;
+    }
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
