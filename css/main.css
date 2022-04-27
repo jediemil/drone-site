@@ -26,6 +26,7 @@ h1, h2, h3 {
 p {
     font-family: 'Montserrat', sans-serif;
     color: #a6acb8;
+    text-align: justify;
 }
 
 .lockScroll {
@@ -176,7 +177,7 @@ p {
     font-size: 6vw;
     height: min-content;
     margin: auto;
-    animation: goDown 4s ease-in-out;
+    animation: goDown 5s ease-in-out;
     padding-top: 10px;
 }
 
@@ -190,7 +191,9 @@ p {
     0% {
         transform: translateY(-150%);
     }
-
+    50% {
+        transform: translateY(-150%);
+    }
     100% {
         transform: translateY(0%);
     }

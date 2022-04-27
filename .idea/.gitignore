@@ -2,4 +2,8 @@
 /shelf/
 /workspace.xml
 # Editor-based HTTP Client requests
-/httpRequests/
+/httpRequests
+
+vcs.xml
+modules.xml
+drone-site.iml

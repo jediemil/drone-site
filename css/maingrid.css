@@ -196,7 +196,7 @@
 #projectContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 35vh 15vh 10vh 40vh 5vh;
+    grid-template-rows: 40vh 15vh 10vh 35vh 5vh 10vh auto;
 }
 
 #firstProjectImage {
@@ -207,4 +207,14 @@
 #projectTitleMain {
     grid-column: 1/-1;
     grid-row: 2/3;
+}
+
+#firstProjectTitle {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+}
+
+#firstProjectText {
+    grid-column: 2/-2;
+    grid-row: 7/8;
 }
