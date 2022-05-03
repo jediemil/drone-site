@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <link type="text/css" rel="stylesheet" href="../css/topbar.css">
     <link type="text/css" rel="stylesheet" href="../css/main.css">
@@ -13,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body class="lockScroll">
-<div id="topBar">
+<body class="lockScroll_NO">
+<nav id="topBar">
     <a href="../index.html">Hem</a>
     <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()">
         <button onclick="toggleDownProject()"id="projectButton">Mina projekt</button>
@@ -40,7 +41,7 @@
         }
     </script>
     <script src="../js/topBar.js"></script>
-</div>
+</nav>
 
 
 <div id="projectContainer">
@@ -48,21 +49,50 @@
     <div id="firstProjectImage" class="backgroundImage960W720H" style="background-image: url('../resources/IMG_2696.JPG')"></div>
 
     <h2 id="firstProjectTitle">Plats år</h2>
-    <p id="firstProjectText">
+    <article id="firstProjectText">
         Löksås ipsum år har räv sällan nya där ser mot så där vidsträckt erfarenheter stora, inom i tre dunge ska när ännu att smultron söka bland kom. Stora björnbär bland plats för stora är, ingalunda flera äng sin nu hav dimma, erfarenheter ingalunda som sorgliga rännil. Nya hans om sällan enligt bra stora hav ska samma, flera sjö vad i hwila på det. Annat i så mot regn kanske färdväg björnbär enligt, ska omfångsrik vidsträckt det för och nu är, ta samma erfarenheter häst kanske åker både. Sällan och blivit sista ta samtidigt vi att precis gör genom nu, och fram av dag tid sig sax björnbär hav bäckasiner, lax rot så gamla där på dag söka det samma. Tre mot gör sällan vemod bland från ser där för, fram från tidigare det är stig och vi i av, denna blivit dag oss vad rot samtidigt oss.
         <br><br>
         Björnbär olika björnbär enligt ännu stora räv samtidigt verkligen ser enligt tid och, där groda verkligen det nu oss göras sällan nya färdväg. Själv se groda ordningens olika av tre sax vad kan, äng brunsås är brunsås så är genom så, bäckasiner tiden ingalunda vid erfarenheter smultron år olika. Erfarenheter tid vad kunde dag dimma dimmhöljd enligt hela vid, faktor därmed färdväg tid från som är erfarenheter groda verkligen, själv se kunde i redan tid så av. Kanske hav själv år vid göras räv dock ska omfångsrik, tiden färdväg tre därmed sig varit har färdväg, erfarenheter själv helt samma sjö kunde omfångsrik samtidigt.
-    </p>
+    </article>
 
     <div id="projectImageWithCap">
+        <button id="leftButton" onclick="changeSlide(-1)">&lt;</button>
         <div class="imageSegment">
             <img src="./../resources/IMG_2694.JPG" alt="Bild från drönare uppe i luften">
             <p>Text om bilden</p>
         </div>
+        <div class="imageSegment invisible">
+            <img src="./../resources/IMG_2697.JPG" alt="Bild från drönare uppe i luften">
+            <p>Text om bilden 2</p>
+        </div>
+        <div class="imageSegment invisible">
+            <img src="./../resources/IMG_2693.JPG" alt="Bild från drönare uppe i luften">
+            <p>Text om bilden 3</p>
+        </div>
+        <button id="rightButton" onclick="changeSlide(1)">&gt;</button>
     </div>
-    <div id="projectImageGrid">
 
+    <h2 id="secondProjectTitle">Cool titel</h2>
+    <article id="secondProjectText">
+        Löksås ipsum år har räv sällan nya där ser mot så där vidsträckt erfarenheter stora, inom i tre dunge ska när ännu att smultron söka bland kom. Stora björnbär bland plats för stora är, ingalunda flera äng sin nu hav dimma, erfarenheter ingalunda som sorgliga rännil. Nya hans om sällan enligt bra stora hav ska samma, flera sjö vad i hwila på det. Annat i så mot regn kanske färdväg björnbär enligt, ska omfångsrik vidsträckt det för och nu är, ta samma erfarenheter häst kanske åker både. Sällan och blivit sista ta samtidigt vi att precis gör genom nu, och fram av dag tid sig sax björnbär hav bäckasiner, lax rot så gamla där på dag söka det samma. Tre mot gör sällan vemod bland från ser där för, fram från tidigare det är stig och vi i av, denna blivit dag oss vad rot samtidigt oss.
+        <br><br>
+        Björnbär olika björnbär enligt ännu stora räv samtidigt verkligen ser enligt tid och, där groda verkligen det nu oss göras sällan nya färdväg. Själv se groda ordningens olika av tre sax vad kan, äng brunsås är brunsås så är genom så, bäckasiner tiden ingalunda vid erfarenheter smultron år olika. Erfarenheter tid vad kunde dag dimma dimmhöljd enligt hela vid, faktor därmed färdväg tid från som är erfarenheter groda verkligen, själv se kunde i redan tid så av. Kanske hav själv år vid göras räv dock ska omfångsrik, tiden färdväg tre därmed sig varit har färdväg, erfarenheter själv helt samma sjö kunde omfångsrik samtidigt.
+        <br><br>
+        Hela som groda göras redan icke samtidigt dunge, stora strand bra att sax blivit för, tiden smultron verkligen erfarenheter inom olika. Vi ännu är precis dimmhöljd händer ta precis, ingalunda redan icke händer nya bäckasiner, trevnadens kanske blivit rot åker för. Ser hela olika rot del sista och på ta det vidsträckt, från dimma lax själv av det när dimmhöljd se. Som bra brunsås som flera nya varit ännu blev bland, hela själv hela och dock dimmhöljd se hela, tre rot miljoner bland år äng stig om. Dimmhöljd genom smultron tidigare blev dock har annan, björnbär nya ingalunda inom samma oss, och hwila enligt mjuka färdväg tiden. Där färdväg dimma jäst åker mjuka oss där stig, händer oss dimma del nya som dock inom, där samtidigt ta tiden händer hwila precis.
+    </article>
+    <div id="projectImageGrid">
+        <img class="s1x2" src="../resources/IMG_2696.JPG" alt="Bild">
+        <img class="s1x2" src="../resources/IMG_2694.JPG" alt="Bild">
+        <img class="s2x2" src="../resources/IMG_2693.JPG" alt="Bild">
+        <img src="../resources/IMG_2695.JPG" alt="Bild">
+        <img src="../resources/IMG_2735.JPG" alt="Bild">
+        <img class="s2x1" src="../resources/IMG_2735.JPG" alt="Bild">
+        <img src="../resources/IMG_2697.JPG" alt="Bild">
+        <img src="../resources/IMG_2696.JPG" alt="Bild">
+        <img src="../resources/IMG_2697.JPG" alt="Bild">
     </div>
 </div>
+
+<script src="../js/slideshow.js"></script>
 </body>
 </html>

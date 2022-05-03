@@ -17,13 +17,19 @@ body, html {
     z-index: 2;
 }
 
+.invisible {
+    opacity: 0 !important;
+}
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    height: min-content;
+    margin: 0;
     z-index: 3;
 }
 
-p {
+p, article {
     font-family: 'Montserrat', sans-serif;
     color: #a6acb8;
     text-align: justify;
@@ -132,7 +138,7 @@ p {
     margin: 20px auto;
 }
 
-#utrustningContainer p {
+#utrustningContainer p, #utrustningContainer article {
     margin: 0;
     text-align: justify;
 }
@@ -182,10 +188,66 @@ p {
     padding-top: 10px;
 }
 
+#projectContainer h2 {
+    font-size: 2.5vw;
+}
+
 #projectTitleMain {
     overflow: hidden;
     height: 100%;
     z-index: 4;
+}
+
+#firstProjectText {
+    padding-bottom: 8vh;
+}
+
+#projectImageWithCap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.imageSegment {
+    position: absolute;
+    left: 10%;
+
+    height: 80vh;
+    display: flex;
+    width: min-content;
+    margin: auto;
+
+    flex-direction: column;
+    transition: opacity 1s ease-in-out;
+}
+
+.imageSegment img {
+    height: 90%;
+    width: 80vw;
+    object-fit: cover;
+    margin: auto;
+}
+
+.imageSegment p {
+    text-align: center;
+    height: min-content;
+    margin: auto;
+}
+
+#projectImageWithCap button {
+    height: 6vw;
+    width: 6vw;
+    border: none;
+    color: #a6acb8;
+    background-color: #F3F3F3;
+    font-size: 3vw;
+    margin: auto 10px;
+}
+
+#projectImageWithCap button:hover {
+    color: #4285f4;
+    border: #a6acb8 2px solid;
 }
 
 @keyframes goDown {

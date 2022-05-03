@@ -22,6 +22,7 @@ function hide() {
     topBar.classList.add("hidden")
     topBar.style.animation = ""
 }*/
+document.getElementById("topBar").style.transform = "translateY(-100%)"
 
 window.onscroll = function() {
     if (window.innerHeight/2 < window.scrollY) {
