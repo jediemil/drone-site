@@ -1,4 +1,4 @@
-#topBar {
+#topBar, #topBarMobile {
     background-color: #F3F3F3;
     width: 100vw;
     top: 0;
@@ -15,8 +15,6 @@
 
 #topBar > a, #topBar button {
     border: none;
-    text-decoration: underline #a6acb8;
-    text-underline-offset: 8px;
     background-color: #F3F3F3;
     color: #a6acb8;
     width: 100%;
@@ -24,6 +22,8 @@
     font-size: 2vw;
     height: min-content;
     padding: 20px;
+    text-decoration: none;
+
 
     font-family: Arial;
 }
@@ -32,9 +32,11 @@
     width: 100%;
 }
 
-#topBar a:hover,#topBar button:hover, #myProjectsDropdown li:hover {
+#topBar a:hover,#topBar button:hover, #myProjectsDropdown a:hover {
     color: #4285f4;
     text-decoration-color: #4285f4;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 .hidden {
@@ -60,6 +62,47 @@
 #myProjectsDropdown a {
     color: #a6acb8;
     text-decoration: none;
+    padding: 15px;
+}
+
+
+
+#topBarMobile button {
+    width: 100%;
+    border: none;
+    background-color: #F3F3F3;
+    color: #a6acb8;
+    text-align: center;
+    font-size: 20px;
+    height: min-content;
+    padding: 20px;
+
+    font-family: Arial;
+}
+
+#menuMobile, #dropdownMobile {
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #F3F3F3;
+}
+
+#menuMobile > a, #menuMobile button, #dropdownMobile > a, #dropdownMobile button {
+    border: none;
+    background-color: #F3F3F3;
+    color: #a6acb8;
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    height: min-content;
+    padding: 20px 0;
+    display: block;
+    text-decoration: none;
+
+
+    font-family: Arial;
 }
 
 @keyframes hide {
@@ -81,5 +124,17 @@
 
     100% {
         transform: translateY(0%);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #topBar {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #topBarMobile {
+        display: none !important;
     }
 }
