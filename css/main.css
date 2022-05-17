@@ -5,11 +5,13 @@ body, html {
     /*animation: lockScroll 5s linear;*/
 }
 
-.fadeOverlay270deg {
+.fadeOverlay270deg { /* Det var planerat att jag skulle använda denna flera gånger,
+ men det slutade med att jag bara använde den en gång. Sätter in en dimma med 270 graders lutning, alltså
+ går den från vänster till höger */
     background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
 }
 
-.backgroundImage960W720H {
+.backgroundImage960W720H { /* Används för bakgrundsbilderna på sidor. alla har storleken 960*720, därifrån kommer namnet */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; /*Ser till att den stannar i mitten*/
@@ -17,7 +19,7 @@ body, html {
     z-index: 2;
 }
 
-.invisible {
+.invisible { /* Används lite här och där i min kod, oftast i samband med JavaScript */
     opacity: 0 !important;
 }
 
@@ -35,7 +37,7 @@ p, article {
     text-align: justify;
 }
 
-.lockScroll {
+.lockScroll { /* Låser scroll i 4 sekunder på de elementen jag sätter denna klass på. Ska användas i vissa projekt */
     animation: lockScroll 4s linear;
 }
 
@@ -47,9 +49,10 @@ p, article {
     background-image: url("../resources/IMG_2735.JPG");
 }
 
-#fadeOverlay {
+#fadeOverlay { /* Skapar dimman på första sidan som är på huvudbilden. */
     animation: animationFadeOverlay 5s linear;
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    z-index: 5;
 }
 
 #mainContainer h1 {
@@ -76,7 +79,7 @@ p, article {
     margin: auto;
 }
 
-@keyframes animationFadeOverlay {
+@keyframes animationFadeOverlay { /* Animerar in dimman på förstasidan */
     0% {
         opacity: 0;
     }
@@ -88,7 +91,7 @@ p, article {
     }
 }
 
-@keyframes lockScroll {
+@keyframes lockScroll { /* Själva animationen för lockScroll */
     0% {
         overflow: hidden;
     }
@@ -104,9 +107,11 @@ p, article {
     }
 }
 
+
 /*
     Utrustning:
 */
+
 #utrustningImageContainer {
     background-image: url("../resources/IMG_2695.JPG");
 }
@@ -140,16 +145,16 @@ p, article {
 
 #utrustningContainer p, #utrustningContainer article {
     margin: 0;
-    text-align: justify;
+    text-align: justify; /* Gör så att texten är lägst ut på kanten både på vänster och höger sida, ser professionellt ut. */
 }
 
 
 /* Flyg Drönare Själv */
 
-#flyselfContainer img {
-    object-fit: cover;
+#flyselfContainer img { /* Markerar de tre bilderna som sitter bredvid varandra */
+    object-fit: cover; /* Beskär bilderna istället för att sträcka ut dem */
     height: 100%;
-    width: 95%;
+    width: 95%; /* Gör så att det blir lita plats mellan bilderna */
     margin: auto;
 }
 
@@ -179,13 +184,14 @@ p, article {
 
 /* Projekt */
 
+/* Tanken är att samma css ska kunna användas för alla projekt */
 #projectTitleMain h1 {
     color: white;
     font-size: 6vw;
     height: min-content;
     margin: auto;
-    animation: goDown 5s ease-in-out;
-    padding-top: 10px;
+    animation: goDown 5s ease-in-out; /* Animerar titlen på projekt */
+    padding: 0 10px;
 }
 
 #projectContainer h2 {
@@ -193,7 +199,7 @@ p, article {
 }
 
 #projectTitleMain {
-    overflow: hidden;
+    overflow: hidden; /* När titlen är utanför diven ska texten vara osynlig */
     height: 100%;
     z-index: 4;
 }
@@ -202,14 +208,14 @@ p, article {
     padding-bottom: 8vh;
 }
 
-#projectImageWithCap {
+#projectImageWithCap { /* Placerar ut knapparna med bild i mitten på slideshow via flex */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 80vh;
 }
 
-.imageSegment {
+.imageSegment { /* Placerar ut alla bilder på samma ställe och placerar texterna under */
     position: absolute;
     left: 10%;
 
@@ -219,13 +225,13 @@ p, article {
     margin: auto;
 
     flex-direction: column;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out; /* Gör så att den animeras om man byter opacity på den */
 }
 
 .imageSegment img {
     height: 90%;
     width: 80vw;
-    object-fit: cover;
+    object-fit: cover; /* Både en höjd och bredd är satt, gör så att bilden beskärs istället för att den dras ut */
     margin: auto;
 }
 
@@ -235,7 +241,7 @@ p, article {
     margin: auto;
 }
 
-#projectImageWithCap button {
+#projectImageWithCap button { /* Stylar knapparna i slideshow */
     height: 6vw;
     width: 6vw;
     border: none;
@@ -250,7 +256,7 @@ p, article {
     border: #a6acb8 2px solid;
 }
 
-@keyframes goDown {
+@keyframes goDown { /* Själva animationen för h1 */
     0% {
         transform: translateY(-150%);
     }

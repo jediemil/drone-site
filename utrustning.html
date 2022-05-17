@@ -16,9 +16,9 @@
 </head>
 <body>
 
-<nav id="topBar">
+<nav id="topBar"> <!-- TopBar -->
     <a href="index.html">Hem</a>
-    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()">
+    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()"> <!-- Osynlig dropdown -->
         <button onclick="toggleDownProject()" id="projectButton">Mina projekt</button>
         <ul id="myProjectsDropdown" class="hidden">
             <li><a class="dropdownContent" href="projects/projectTemplate.html">Falkenberg 2021</a></li>
@@ -31,17 +31,17 @@
     <a href="utrustning.html">Min utrustning</a>
     <a href="flyself.html">Flyg drönare själv</a>
 </nav>
-<nav id="topBarMobile">
+<nav id="topBarMobile"> <!-- Mobil TopBar -->
     <button onclick="toggleMenuMobile()">Meny</button>
 </nav>
-<div class="hidden" id="menuMobile">
+<div class="hidden" id="menuMobile"> <!-- Mobil TopBar öppen -->
     <button onclick="toggleMenuMobile()">Meny</button>
     <a href="index.html">Hem</a>
     <button onclick="toggleDownProjectMobile()" id="projectButtonMobile">Mina projekt</button>
     <a href="utrustning.html">Min utrustning</a>
     <a href="flyself.html">Flyg drönare själv</a>
 </div>
-<div class="hidden" id="dropdownMobile">
+<div class="hidden" id="dropdownMobile"> <!-- Mobil TopBar mina projekt -->
     <a class="dropdownContent" href="projects/projectTemplate.html">Falkenberg 2021</a>
     <a class="dropdownContentMobile">Norbo 2021</a>
     <a class="dropdownContentMobile">AAAAA</a>
@@ -49,7 +49,7 @@
     <a class="dropdownContentMobile">AAAAA</a>
     <button onclick="toggleDownProjectMobile()">Tillbaka</button>
 </div>
-<script src="js/topBar.js"></script>
+<script src="js/topBar.js"></script> <!-- TopBar slut -->
 
 
 <div id="utrustningContainer">

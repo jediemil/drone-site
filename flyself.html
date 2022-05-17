@@ -16,9 +16,9 @@
 </head>
 <body>
 
-<nav id="topBar">
+<nav id="topBar"> <!-- TopBar -->
     <a href="index.html">Hem</a>
-    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()">
+    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()"> <!-- Osynlig dropdown -->
         <button onclick="toggleDownProject()" id="projectButton">Mina projekt</button>
         <ul id="myProjectsDropdown" class="hidden">
             <li><a class="dropdownContent" href="projects/projectTemplate.html">Falkenberg 2021</a></li>
@@ -31,17 +31,17 @@
     <a href="utrustning.html">Min utrustning</a>
     <a href="flyself.html">Flyg drönare själv</a>
 </nav>
-<nav id="topBarMobile">
+<nav id="topBarMobile"> <!-- Mobil TopBar -->
     <button onclick="toggleMenuMobile()">Meny</button>
 </nav>
-<div class="hidden" id="menuMobile">
+<div class="hidden" id="menuMobile"> <!-- Mobil TopBar öppen -->
     <button onclick="toggleMenuMobile()">Meny</button>
     <a href="index.html">Hem</a>
     <button onclick="toggleDownProjectMobile()" id="projectButtonMobile">Mina projekt</button>
     <a href="utrustning.html">Min utrustning</a>
     <a href="flyself.html">Flyg drönare själv</a>
 </div>
-<div class="hidden" id="dropdownMobile">
+<div class="hidden" id="dropdownMobile"> <!-- Mobil TopBar mina projekt -->
     <a class="dropdownContent" href="projects/projectTemplate.html">Falkenberg 2021</a>
     <a class="dropdownContentMobile">Norbo 2021</a>
     <a class="dropdownContentMobile">AAAAA</a>
@@ -49,21 +49,21 @@
     <a class="dropdownContentMobile">AAAAA</a>
     <button onclick="toggleDownProjectMobile()">Tillbaka</button>
 </div>
-<script src="js/topBar.js"></script>
+<script src="js/topBar.js"></script> <!-- TopBar slut -->
 
 
 <div id="flyselfContainer">
     <h1>Flyg drönare själv</h1>
-    <div id="flyselfImageContainer" class="backgroundImage960W720H"></div>
+    <div id="flyselfImageContainer" class="backgroundImage960W720H"></div> <!-- Bakgrundsbild i toppen -->
 
     <h2 id="flyselfTitle1">Det är enkelt..</h2>
-    <article id="flySelfSimpleText">
+    <article id="flySelfSimpleText"> <!-- Första texten -->
         Löksås ipsum oss upprätthållande mot ordningens bäckasiner stora som gör se händer är sax, av del sin söka inom rot verkligen det där så erfarenheter själv. Har på lax för olika bland åker hela i rot icke, flera annat sällan träutensilierna häst år upprätthållande ser bäckasiner, där sällan dunge tiden bäckasiner det äng ska när. Groda genom räv samma söka jäst kan av blev så häst äng bra, denna och plats verkligen mjuka tre helt som bra gamla lax, brunsås lax åker bland där rännil sjö lax verkligen tre där.
         <br><br>
         Dag det groda ta sjö rot tid själv, bra hav del vidsträckt miljoner inom miljoner genom, i händer hans verkligen strand varit. Och dock äng ännu miljoner vidsträckt häst, så där brunsås plats miljoner vidsträckt omfångsrik, hav att både lax sax. Omfångsrik om söka hwila se dock precis, sorgliga miljoner ta vid har det, ser om tidigare bland det.
     </article>
 
-    <h2 id="flyselfTitle2">Det går snabbt att lära sig..</h2>
+    <h2 id="flyselfTitle2">Det går snabbt att lära sig..</h2> <!-- Tre bilder bredvid varandra och text under -->
     <img src="resources/firstFlight.JPG" id="firstFlight" alt="En ful bild från drönare" title="Fotograf Emil Reyier Hedin">
     <img src="resources/oneYear.JPG" id="oneYear" alt="En lite finare bild från drönare" title="Fotograf Emil Reyier Hedin">
     <img src="resources/now.JPG" id="now" alt="En fin bild från drönare" title="Fotograf Emil Reyier Hedin">
@@ -72,7 +72,7 @@
     <p id="nowText">Nu</p>
 
     <h2 id="flyselfTitle3">Hur du ska göra</h2>
-    <article id="howToDo">
+    <article id="howToDo"> <!-- Andra texten -->
         Löksås ipsum kan miljoner annat regn annat ordningens kom annan, där när rot har björnbär kunde ordningens äng tidigare, samma miljoner där är ordningens och hav lax. Det omfångsrik denna tre äng år i björnbär rot åker, det regn räv precis omfångsrik sorgliga ännu hav både tid, upprätthållande och rot och händer dag kom som. Nu enligt lax har sig ordningens söka både hans så, om göras så och annan genom lax blev kan, dimmhöljd helt redan hans nya sjö bland olika.
         <br><br>
         År och brunsås enligt miljoner groda bland genom det från, fram verkligen vi bäckasiner groda ännu äng det dimma, ännu på hwila ta sig lax på regn. Redan äng samma upprätthållande hav verkligen själv verkligen räv så nya, från stora när har olika regn vid på trevnadens när färdväg, åker oss trevnadens rännil söka groda kan av bäckasiner.

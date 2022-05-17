@@ -16,9 +16,9 @@
 </head>
 <body class="lockScroll_NO">
 
-<nav id="topBar">
+<nav id="topBar"> <!-- TopBar -->
     <a href="../index.html">Hem</a>
-    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()">
+    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()"> <!-- Osynlig dropdown -->
         <button onclick="toggleDownProject()" id="projectButton">Mina projekt</button>
         <ul id="myProjectsDropdown" class="hidden">
             <li><a class="dropdownContent" href="projectTemplate.html">Falkenberg 2021</a></li>
@@ -31,17 +31,17 @@
     <a href="../utrustning.html">Min utrustning</a>
     <a href="../flyself.html">Flyg drönare själv</a>
 </nav>
-<nav id="topBarMobile">
+<nav id="topBarMobile"> <!-- Mobil TopBar -->
     <button onclick="toggleMenuMobile()">Meny</button>
 </nav>
-<div class="hidden" id="menuMobile">
+<div class="hidden" id="menuMobile"> <!-- Mobil TopBar öppen -->
     <button onclick="toggleMenuMobile()">Meny</button>
     <a href="../index.html">Hem</a>
     <button onclick="toggleDownProjectMobile()" id="projectButtonMobile">Mina projekt</button>
     <a href="../utrustning.html">Min utrustning</a>
     <a href="../flyself.html">Flyg drönare själv</a>
 </div>
-<div class="hidden" id="dropdownMobile">
+<div class="hidden" id="dropdownMobile"> <!-- Mobil TopBar mina projekt -->
     <a class="dropdownContent" href="projectTemplate.html">Falkenberg 2021</a>
     <a class="dropdownContentMobile">Norbo 2021</a>
     <a class="dropdownContentMobile">AAAAA</a>
@@ -49,12 +49,12 @@
     <a class="dropdownContentMobile">AAAAA</a>
     <button onclick="toggleDownProjectMobile()">Tillbaka</button>
 </div>
-<script src="../js/topBar.js"></script>
+<script src="../js/topBar.js"></script> <!-- TopBar slut -->
 
 
 <div id="projectContainer">
-    <div id="projectTitleMain"><h1>[PLATS] [ÅR]</h1></div>
-    <div id="firstProjectImage" class="backgroundImage960W720H" style="background-image: url('../resources/IMG_2696.JPG')"></div>
+    <div id="projectTitleMain"><h1>[PLATS] [ÅR]</h1></div> <!-- h1 sitter i en div för att animationen ska fungera -->
+    <div id="firstProjectImage" class="backgroundImage960W720H" style="background-image: url('../resources/IMG_2696.JPG')"></div> <!-- Bakgrundsbild -->
 
     <h2 id="firstProjectTitle">Plats år</h2>
     <article id="firstProjectText">
@@ -63,8 +63,9 @@
         Björnbär olika björnbär enligt ännu stora räv samtidigt verkligen ser enligt tid och, där groda verkligen det nu oss göras sällan nya färdväg. Själv se groda ordningens olika av tre sax vad kan, äng brunsås är brunsås så är genom så, bäckasiner tiden ingalunda vid erfarenheter smultron år olika. Erfarenheter tid vad kunde dag dimma dimmhöljd enligt hela vid, faktor därmed färdväg tid från som är erfarenheter groda verkligen, själv se kunde i redan tid så av. Kanske hav själv år vid göras räv dock ska omfångsrik, tiden färdväg tre därmed sig varit har färdväg, erfarenheter själv helt samma sjö kunde omfångsrik samtidigt.
     </article>
 
-    <div id="projectImageWithCap">
-        <button id="leftButton" onclick="changeSlide(-1)">&lt;</button>
+    <div id="projectImageWithCap"> <!-- Slideshow, alla bilder läggs in med en div med imageSegment class.
+    Där ska det vara en text och en bild. Bara en av dem visas samtidigt via JavaScript -->
+        <button id="leftButton" onclick="changeSlide(-1)">&lt;</button> <!-- Knappen som går till vänster -->
         <div class="imageSegment">
             <img src="./../resources/IMG_2694.JPG" alt="Bild från drönare uppe i luften" title="Fotograf Emil Reyier Hedin">
             <p>Text om bilden</p>
@@ -77,7 +78,7 @@
             <img src="./../resources/IMG_2693.JPG" alt="Bild från drönare uppe i luften" title="Fotograf Emil Reyier Hedin">
             <p>Text om bilden 3</p>
         </div>
-        <button id="rightButton" onclick="changeSlide(1)">&gt;</button>
+        <button id="rightButton" onclick="changeSlide(1)">&gt;</button> <!-- Knappen som går åt höger -->
     </div>
 
     <h2 id="secondProjectTitle">Cool titel</h2>
@@ -88,7 +89,8 @@
         <br><br>
         Hela som groda göras redan icke samtidigt dunge, stora strand bra att sax blivit för, tiden smultron verkligen erfarenheter inom olika. Vi ännu är precis dimmhöljd händer ta precis, ingalunda redan icke händer nya bäckasiner, trevnadens kanske blivit rot åker för. Ser hela olika rot del sista och på ta det vidsträckt, från dimma lax själv av det när dimmhöljd se. Som bra brunsås som flera nya varit ännu blev bland, hela själv hela och dock dimmhöljd se hela, tre rot miljoner bland år äng stig om. Dimmhöljd genom smultron tidigare blev dock har annan, björnbär nya ingalunda inom samma oss, och hwila enligt mjuka färdväg tiden. Där färdväg dimma jäst åker mjuka oss där stig, händer oss dimma del nya som dock inom, där samtidigt ta tiden händer hwila precis.
     </article>
-    <div id="projectImageGrid">
+    <div id="projectImageGrid"> <!-- Flexibel image grid. Vilka bilder som ska vara större kan väljas med klasserna
+     s2x1 (2*1 i storlek) s2x2 (2*2 i storlek) och s1x2 (1*2 i storlek) default är 1*1 i storlek -->
         <img class="s1x2" src="../resources/IMG_2696.JPG" alt="Bild" title="Fotograf Emil Reyier Hedin">
         <img class="s1x2" src="../resources/IMG_2694.JPG" alt="Bild" title="Fotograf Emil Reyier Hedin">
         <img class="s2x2" src="../resources/IMG_2693.JPG" alt="Bild" title="Fotograf Emil Reyier Hedin">
@@ -101,6 +103,6 @@
     </div>
 </div>
 
-<script src="../js/slideshow.js"></script>
+<script src="../js/slideshow.js"></script> <!-- Importera scriptet som styr slideshow -->
 </body>
 </html>

@@ -1,4 +1,6 @@
-#mainContainer {
+/* Index */
+
+#mainContainer { /* Definierar grid på första sidan */
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -6,7 +8,7 @@
 }
 
 #mainImageContainer {
-    width: 100vw;
+    width: 100vw; /* Ser till att den täcker hela skärmen */
     height: 100vh;
 
     grid-column: 1/-1;
@@ -15,7 +17,7 @@
 
 #fadeOverlay {
     width: 100vw;
-    height: 50vh;
+    height: 50vh; /* Dimman täcker bara hälften av bakgrundsbildens höjd */
 
     grid-column: 1/-1;
     grid-row: 3/5;
@@ -47,7 +49,7 @@
     grid-row: 8/10;
 }
 
-#whyDroneOverlay {
+#whyDroneOverlay { /* Sätter position på dimman på andra bilden */
     grid-column: 3/-2;
     grid-row: 8/10;
     margin-left: 7%;
@@ -90,7 +92,6 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 35vh 15vh 10vh 40vh 5vh 5vh auto auto auto auto 20vh auto auto auto auto 10vh;
-    /*                       h1              m    p  h2  img   h3  p    m   h2  img   h3  p*/
 }
 
 #utrustningContainer h1 {
@@ -131,22 +132,22 @@
     grid-column: 2/-2;
 }
 
-#others {
+#others { /* Titlen om andra saker som är bra att ha */
     grid-column: 1/-1;
     grid-row: 12/13;
 }
 
-#othersIMG {
+#othersIMG { /* Bilden om andra saker som är bra att ha */
     grid-column: 1/-1;
     grid-row: 13/14;
 }
 
-#othersTitle {
+#othersTitle { /* Andra titlen om andra saker som är bra att ha */
     grid-column: 1/-1;
     grid-row: 14/15;
 }
 
-#othersText {
+#othersText { /* Texten om andra saker som är bra att ha */
     grid-column: 2/-2;
     grid-row: 15/16;
 }
@@ -155,7 +156,7 @@
     #utrustningContainer p, #utrustningContainer article {
         grid-column: 1/-1;
         padding: 0 15px;
-        text-align: left;
+        text-align: left; /* Ta bort den professionella texten när skärmen är för liten, det ser konstigt ut med för liten skärm */
     }
     #utrustningContainer h1 {
         grid-column: 1/-1;
@@ -187,7 +188,7 @@
     grid-row: 6/7;
 }
 
-#flySelfSimpleText {
+#flySelfSimpleText { /* Texten om att det är lätt att lära sig */
     grid-row: 7/8;
     grid-column: 2/-2;
 }
@@ -197,28 +198,28 @@
     grid-row: 9/10;
 }
 
-#firstFlight {
+#firstFlight { /* Bilderna som är bredvid varandra */
     grid-column: 1/3;
     grid-row: 11/12;
 }
-#oneYear {
+#oneYear { /* Bilderna som är bredvid varandra */
     grid-column: 3/5;
     grid-row: 11/12;
 }
-#now {
+#now { /* Bilderna som är bredvid varandra */
     grid-column: 5/7;
     grid-row: 11/12;
 }
 
-#firstFlightText {
+#firstFlightText { /* Text till bilderna */
     grid-column: 1/3;
     grid-row: 12/13;
 }
-#oneYearText {
+#oneYearText { /* Text till bilderna */
     grid-column: 3/5;
     grid-row: 12/13;
 }
-#nowText {
+#nowText { /* Text till bilderna */
     grid-column: 5/7;
     grid-row: 12/13;
 }
@@ -233,7 +234,7 @@
     grid-row: 15/16;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { /* Lägger om ganska mycket på sidan när skärmen är under 600 pixlar i bredd */
     #flyselfContainer {
         grid-template-rows: 35vh 15vh 10vh 40vh 5vh 5vh auto 10vh 5vh 5vh auto 10vh auto 10vh auto 10vh 10vh 5vh auto 15vh;
     }
@@ -287,13 +288,14 @@
 
 
 /* Projekt */
+
 #projectContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 40vh 15vh 10vh 35vh 5vh 10vh auto auto 10vh 10vh auto auto;
 }
 
-#firstProjectImage {
+#firstProjectImage { /* Titel */
     grid-column: 1/-1;
     grid-row: 1/5;
 }
@@ -313,7 +315,7 @@
     grid-row: 7/8;
 }
 
-#projectImageWithCap {
+#projectImageWithCap { /* position på slideshow */
     grid-column: 1/-1;
     grid-row: 8/9;
 }
@@ -329,15 +331,15 @@
     grid-row: 11/12;
 }
 
-#projectImageGrid {
+#projectImageGrid { /* Image grid */
     grid-column: 1/-1;
     grid-row: 12/13;
     width: 100vw;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, 250px); /* Alla bilder ska vara 250 px i bredd och höjd som default */
     grid-auto-rows: 250px;
-    grid-auto-flow: dense;
+    grid-auto-flow: dense; /* Försöker eliminera vita tomrum mellan bilderna */
     grid-gap: 5px;
     justify-content: center;
 
@@ -347,10 +349,10 @@
 #projectImageGrid img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Både bredd och höjd är satt, beskär bilderna istället för att sträcka dem */
 }
 
-.s1x2 {
+.s1x2 { /* Definierar klasserna för image griden */
     grid-column: auto/span 2;
 }
 
@@ -371,13 +373,13 @@
     }
     #projectImageGrid {
         margin-top: 10vh;
-        grid-template-columns: repeat(auto-fit, 40vw);
-        grid-auto-rows: 40vw;
+        grid-template-columns: repeat(auto-fit, 40vw); /* 40vw + 40vw = 80vw. Alltså kommer det vara 20vw i marginal mellan dem */
+        grid-auto-rows: 40vw; /* Samma höjd som bredd */
     }
     #projectContainer h2 {
         font-size: 6vw;
     }
-    #projectImageWithCap {
+    #projectImageWithCap { /* Ändrar storlek på slideshow */
         margin-top: 10vh;
         height: 40vh;
     }

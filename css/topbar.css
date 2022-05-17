@@ -1,4 +1,4 @@
-#topBar, #topBarMobile {
+#topBar, #topBarMobile { /* Markerar den delen som syns hela tiden, alltså där knapparna finns */
     background-color: #F3F3F3;
     width: 100vw;
     top: 0;
@@ -10,10 +10,10 @@
     flex-grow: 1;
     z-index: 10;
 
-    transition: transform 0.3s;
+    transition: transform 0.3s; /* Animerar positionen på topbar när den förändras med JavaScript */
 }
 
-#topBar > a, #topBar button {
+#topBar > a, #topBar button { /* Markerar knapparna i topBar */
     border: none;
     background-color: #F3F3F3;
     color: #a6acb8;
@@ -25,14 +25,14 @@
     text-decoration: none;
 
 
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 #topBar div {
     width: 100%;
 }
 
-#topBar a:hover,#topBar button:hover, #myProjectsDropdown a:hover {
+#topBar a:hover,#topBar button:hover, #myProjectsDropdown a:hover { /* Markerar knapparna när man har musen på dem */
     color: #4285f4;
     text-decoration-color: #4285f4;
     text-decoration: underline;
@@ -43,23 +43,23 @@
     display: none !important;
 }
 
-#myProjectsDropdown {
+#myProjectsDropdown { /* Dropdown för project */
     background-color: #F3F3F3;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style-type: none; /* Tar bort punkterna på listan */
     position: fixed;
 }
 
-#myProjectsDropdown li {
+#myProjectsDropdown li { /* Listan i dropdownen */
     padding: 15px;
     color: #a6acb8;
     width: 100%;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 1.5vw;
 }
 
-#myProjectsDropdown a {
+#myProjectsDropdown a { /* Markerar länkarna i dropdown */
     color: #a6acb8;
     text-decoration: none;
     padding: 15px;
@@ -67,7 +67,7 @@
 
 
 
-#topBarMobile button {
+#topBarMobile button { /* Knappen som öppnar menyn på mobil */
     width: 100%;
     border: none;
     background-color: #F3F3F3;
@@ -77,10 +77,10 @@
     height: min-content;
     padding: 20px;
 
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
-#menuMobile, #dropdownMobile {
+#menuMobile, #dropdownMobile { /* De två menyerna på mobil */
     width: 100vw;
     position: fixed;
     left: 0;
@@ -89,7 +89,7 @@
     background-color: #F3F3F3;
 }
 
-#menuMobile > a, #menuMobile button, #dropdownMobile > a, #dropdownMobile button {
+#menuMobile > a, #menuMobile button, #dropdownMobile > a, #dropdownMobile button { /* Markerar alla knappar på mobil */
     border: none;
     background-color: #F3F3F3;
     color: #a6acb8;
@@ -102,10 +102,10 @@
     text-decoration: none;
 
 
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
-@keyframes hide {
+/*@keyframes hide {
     0% {
         transform: translateY(0%);
         display: flex;
@@ -125,8 +125,9 @@
     100% {
         transform: translateY(0%);
     }
-}
+}*/
 
+/* Byter ut topBar till topBarMobile när skärmen är under 600 pixlar i bredd. */
 @media only screen and (max-width: 600px) {
     #topBar {
         display: none !important;
