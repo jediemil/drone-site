@@ -253,8 +253,7 @@
     }
     #flyselfContainer p {
         grid-column: 1/-1;
-        padding: 5vh 10vw;
-        text-align: left;
+        text-align: center;
     }
     #flyselfTitle3 {
         grid-row: 18/19;
