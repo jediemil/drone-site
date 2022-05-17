@@ -4,7 +4,7 @@
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35vh 15vh 10vh 40vh 5vh auto 5vh 10vh auto 5vh auto;
+    grid-template-rows: 35vh 15vh 10vh 40vh 5vh auto 5vh 10vh auto 5vh auto auto 10vh;
 }
 
 #mainImageContainer {
@@ -55,9 +55,15 @@
     margin-left: 7%;
 }
 
+#mainContainer a {
+    grid-column: 1/-1;
+    grid-row: -2/-3; /* Sätter läs mer länken näst längst ned */
+    padding: 5vh;
+}
+
 @media only screen and (max-width: 600px) {
     #mainContainer {
-        grid-template-rows: 35vh auto auto 40vh 5vh auto 5vh 10vh auto 5vh auto 15vh;
+        grid-template-rows: 35vh auto auto 40vh 5vh auto 5vh 10vh auto 5vh auto 15vh auto 10vh;
     }
     #mainContainer h1 {
         grid-column: 1/-1;
@@ -81,6 +87,9 @@
         grid-column: 1/-1;
         font-size: 20px;
         text-align: left;
+    }
+    #mainContainer a {
+        font-size: 20px;
     }
 }
 

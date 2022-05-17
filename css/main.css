@@ -79,6 +79,21 @@ p {
     margin: auto;
 }
 
+#mainContainer a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #a6acb8;
+    text-align: center;
+}
+
+#mainContainer a:hover {
+    color: #4285f4;
+    text-decoration-color: #4285f4;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+
 @keyframes animationFadeOverlay { /* Animerar in dimman på förstasidan */
     0% {
         opacity: 0;
