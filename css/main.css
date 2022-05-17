@@ -31,7 +31,7 @@ h1, h2, h3 {
     z-index: 3;
 }
 
-p, article {
+p {
     font-family: 'Montserrat', sans-serif;
     color: #a6acb8;
     text-align: justify;
@@ -143,7 +143,7 @@ p, article {
     margin: 20px auto;
 }
 
-#utrustningContainer p, #utrustningContainer article {
+#utrustningContainer p {
     margin: 0;
     text-align: justify; /* Gör så att texten är lägst ut på kanten både på vänster och höger sida, ser professionellt ut. */
 }

@@ -153,7 +153,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #utrustningContainer p, #utrustningContainer article {
+    #utrustningContainer p {
         grid-column: 1/-1;
         padding: 0 15px;
         text-align: left; /* Ta bort den professionella texten när skärmen är för liten, det ser konstigt ut med för liten skärm */
@@ -242,7 +242,7 @@
         grid-column: 1/-1;
         font-size: 9vw;
     }
-    #flyselfContainer article {
+    #flyselfContainer p {
         grid-column: 1/-1;
         padding: 5vh 10vw;
         text-align: left;
@@ -366,7 +366,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #projectContainer article {
+    #projectContainer p {
         grid-column: 1/-1;
         padding: 0 10vw;
         text-align: left;
