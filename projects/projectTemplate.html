@@ -19,8 +19,8 @@
 
 <nav id="topBar"> <!-- TopBar -->
     <a href="../index.html">Hem</a>
-    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()"> <!-- Osynlig dropdown -->
-        <button onclick="toggleDownProject()" id="projectButton">Mina projekt</button>
+    <div class="dropdown" onmouseenter="dropDownProject()" onmouseleave="hideProject()"
+         onfocusin="dropDownProject()" onfocusout="hideProject()"> <!-- Osynlig dropdown -->        <button onclick="toggleDownProject()" id="projectButton">Mina projekt</button>
         <ul id="myProjectsDropdown" class="hidden">
             <li><a class="dropdownContent" href="projectTemplate.html">Falkenberg 2021</a></li>
             <li><a class="dropdownContent">Norbo 2021</a></li>
