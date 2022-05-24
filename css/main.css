@@ -5,6 +5,15 @@ body, html {
     /*animation: lockScroll 5s linear;*/
 }
 
+body { /* Gömmer scroll bar för ett snyggare utseende. Det är relativt odefinierat, därför behövs många olika CSS styles. */
+    -ms-overflow-style: none; /* För Internet Explorer och Microsoft Edge */
+    scrollbar-width: none; /* För Firefox */
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    display: none; /* För Chrome, Safari, och Opera */
+}
+
 .fadeOverlay270deg { /* Det var planerat att jag skulle använda denna flera gånger,
  men det slutade med att jag bara använde den en gång. Sätter in en dimma med 270 graders lutning, alltså
  går den från vänster till höger */
