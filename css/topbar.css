@@ -105,6 +105,20 @@
     font-family: Arial, sans-serif;
 }
 
+.skipToMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    z-index: 100000;
+    text-decoration: none;
+}
+
+.skipToMain:focus {
+    opacity: 1;
+}
+
 /*@keyframes hide {
     0% {
         transform: translateY(0%);
